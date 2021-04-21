@@ -25,6 +25,11 @@ margin: 0;
   
 }
 
+.loginbtn {
+  top: 350;
+  height: 50px;
+}
+
 /* Style the links inside the navigation bar */
 .topnav a {
   float: center;
@@ -61,7 +66,7 @@ margin: 0;
   margin: auto;
   display: flex;
   justify-content: center;
-  height: 3000px;
+  height: 500px;
   width: 1000px;
   /* border: 3px white; */
   background-color: white;
@@ -96,7 +101,7 @@ margin: 0;
   
   
           justify-content: left;
-          height: 3000px;
+          height: 500px;
           width: 375px;
           background-color: white;
         }
