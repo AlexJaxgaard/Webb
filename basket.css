@@ -1,0 +1,215 @@
+body {background-image:url("https://wallpaperaccess.com/full/765801.jpg");
+    margin: 0;
+    }
+    
+    @font-face {
+      font-family: signerica;
+      src: url(./Signerica_Fat.ttf);
+      font-weight: fat;
+    }
+    
+    .card {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 300px;
+        left: 250px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        max-width: 300px;
+        margin: auto;
+        text-align: center;
+        font-family: arial;
+      }
+      
+      .price {
+        color: grey;
+        font-size: 22px;
+      }
+      
+      .button {
+        border: none;
+        outline: 0;
+        padding: 12px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 18px;
+      }
+
+      .PayPalBtn {
+        border: none;
+        outline: 0;
+        padding: 12px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 18px;
+      }
+      .PayBtnApl {
+        border: none;
+        outline: 0;
+        padding: 12px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 18px;
+      }
+
+      .card2 {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 300px;
+        left: 570px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        max-width: 300px;
+        margin: auto;
+        text-align: center;
+        font-family: arial;
+      }
+      .card2 button:hover {
+        opacity: 0.7;
+      }
+
+      .card3 {
+        position: absolute;
+        display: flex; 
+        flex-direction: column;
+        top: 300px;
+        left: 890px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        max-width: 300px;
+        margin: auto;
+        text-align: center;
+        font-family: arial;
+      }
+    
+
+
+    .col-sm-3 {
+      width: 25%;
+      float: left;
+      position: relative;
+    }
+    
+    /* Add a black background color to the top navigation */
+    .topnav {
+      
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      
+      
+      
+    }
+    
+    /* Style the links inside the navigation bar */
+    .topnav a {
+      float: center;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      justify-content: center;
+      
+    }
+    
+    /* Change the color of links on hover */
+    .topnav a:hover {
+      background-color: black;
+      color: white;
+    }
+    
+    /* Add a color to the active/current link */
+    .topnav a.active {
+      background-color: black;
+      color: white;
+    }
+    .maindiv {
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      height: 216px;
+      width: 1000px;
+      /* border: 3px white; */
+      background-color: white;
+    }
+    .maindiv2 {
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      height: 700px;
+      width: 1000px;
+      /* border: 3px white; */
+      background-color: white;
+    }
+    
+    .flex-container {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    @media screen and (max-width: 800px) {
+      .topnav {
+          justify-content: left;
+          max-width: 300px;
+      }
+    
+    .topnav a {
+      padding: 14px 16px;
+        font-size: 5px;
+        float: none;
+    }
+    .image {
+      display: none;        
+          }
+          .maindiv {
+              justify-content: left;
+              left: 0px;
+      width: 375px;
+      display: none;
+            }
+            .maindiv2 {
+      
+      
+              justify-content: left;
+              height: 3000px;
+              width: 375px;
+              background-color: white;
+            }
+            body {background-image:url("");
+              margin: 0;
+              overflow-x: hidden;
+              }
+              .välkommenTillJeez {
+                
+                text-align: center;
+              }
+              .card {
+                top: 150px;
+                left: 0px;
+                font-size: 7px;
+          
+              }
+              .card2 {
+                top: 820px;
+                left: 0px;
+                font-size: 7px;
+          
+              }
+              .card3 {
+                top: 150px;
+                max-width: none;
+                left: 300px;
+          
+              
+    }
+
+    }
