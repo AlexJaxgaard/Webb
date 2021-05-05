@@ -1,20 +1,16 @@
 body {background-image:url("https://wallpaperaccess.com/full/765801.jpg");
     margin: 0;
     }
-    
+    /* Font face för vissa element på index-sidan */
     @font-face {
       font-family: signerica;
       src: url(./Signerica_Fat.ttf);
       
     }
     
-    .col-sm-3 {
-      width: 25%;
-      float: left;
-      position: relative;
-    }
+   
     
-    /* Add a black background color to the top navigation */
+    /* Lägger till en svart bakgrundsfärg till menyn */
     .topnav {
       
       overflow: hidden;
@@ -28,12 +24,12 @@ body {background-image:url("https://wallpaperaccess.com/full/765801.jpg");
 
     
 
-
+/*Hogersida är bara till för att flytta text så att den sitter på höger sida*/
 .hogersida {
     text-align: right;
 }
 
-    /* Style the links inside the navigation bar */
+    /* Stylar länkarna inuti menyn */
     .topnav a {
       
       color: black;
@@ -45,197 +41,203 @@ body {background-image:url("https://wallpaperaccess.com/full/765801.jpg");
       
     }
     
-    /* Change the color of links on hover */
+    /* Ändrar färgen på länkar vid hover*/
     .topnav a:hover {
       background-color: black;
       color: white;
     }
     
-    /* Add a color to the active/current link */
+    /* Lägger till en färg till den aktiva länken i menyn */
     .topnav a.active {
       background-color: black;
       color: white;
     }
     .maindiv {
-      margin: auto;
-      display: flex;
-      justify-content: center;
-      height: 216px;
-      width: 1000px;
-      /* border: 3px white; */
-      background-color: white;
+      /* Sätter parametrar för maindiv, det vita blocket som agerar bakgrund */
+      margin: auto; /*Bestämmer storlek*/
+  display: flex; /*Gör att diven följer storleken på skärmen*/
+  justify-content: center; /*Lägger allt i div i mitten*/
+  height: 216px; /*Justerar höjd*/
+  width: 1000px;/*Justerar bredd*/
+  
+  background-color: white; /*Bestämmer bakgrundsfärgen*/
     }
     .maindiv2 {
-      margin: auto;
-      display: flex;
-      justify-content: center;
-      height: 500px;
-      width: 1000px;
-      /* border: 3px white; */
-      background-color: white;
+     /* Sätter parametrar för maindiv2, det vita blocket som agerar bakgrund */
+  margin: auto; /*Bestämmer storlek*/
+  display: flex; /*Gör att diven följer storleken på skärmen*/
+  justify-content: center; /*Lägger allt i div i mitten*/
+  height: 500px; /*Justerar höjd*/
+  width: 1000px; /*Justerar bredd*/
+  background-color: white; /*Bestämmer bakgrundsfärgen*/
     }
     .maindiv3 {
-        margin: auto;
+        margin: auto; /*Bestämmer storlek*/
  
 
-        height: 500px;
-        width: 1000px;
+        height: 500px; /*Bestämmer höjden, i detta fall 500px*/
+        width: 1000px; /*Bestämmer bredden, i detta fall 1000px*/
         /* border: 3px white; */
-        background-color: white;
+        background-color: white; /*Bestämmer bakgrundsfärgen*/
       }
 
+      /*Till för kontaktknappen, gör att texten centreras*/
       .wrapper {
         text-align: center;
     }
 
+    /*Sätter parametrar för kontaktknappen*/
       .kontaktknapp {
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-        font-size: 24px;
-        padding: 14px 40px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); /*Sätter skugga bakom knappen*/
+        font-size: 24px; /*Sätter storleken på fonten till 24 pixlar*/
+        padding: 14px 40px; /*Sätter en pad i form av en rektangel*/
         
       }
+
+      /*Aktiveras när användare hovrar över kontaktknappen*/
       .kontaktknapp:hover {
-        transition-duration: 0.4s;
-        background-color: black; /* Green */
-        color: white;
+        transition-duration: 0.4s; /*Det tar 0,4 sekunder innan knappen ändrar färg*/
+        background-color: black; /*Sätter knappens färg till svart*/
+        color: white; /* sätter knappens bakgrundsfärgen efter animeringen till vit, vilket gör att texten blir vit*/
       }
 
 
     .kontakt {
-        text-align: left;
+        text-align: left; /*Gör att text läggs på vänster sida*/
     }
     .flex-container {
-      display: flex;
-      flex-direction: column;
+      display: flex; /*Gör att containern följer storleken på skärmen*/
+      flex-direction: column; /*I vilken ordning containern sitter med andra containers*/
     }
 
     body {
-        font-family: Arial, Helvetica, sans-serif;
-        margin: 0;
+        font-family: Arial, Helvetica, sans-serif; /*Möjliggör användandet av typsnitt till Arial, Helvetica eller Sans-Serif*/
+        margin: 0; /*Bestämmer storlek*/
       }
       
       html {
-        box-sizing: border-box;
+        box-sizing: border-box; /*Gör så att webbläsaren kan räkna med höjd och bredd för att skapa och visa ett föremål*/
       }
       
     
       
       .column {
-        float: left;
-        width: 33.3%;
-        margin-bottom: 16px;
-        padding: 0 8px;
+        float: left; /*Föremålet placeras åt vänster sida*/
+        width: 33.3%; /*Följer skärmens storlek, alltså är bredden på föremålet 33,3% av skärmens bredd*/
+        margin-bottom: 16px; /*Sätter den nedre margin till 16 pixlar*/
+        padding: 0 8px; /*Skapar en padding med storlek 8px*/
       }
       
       .card {
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        margin: 8px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /*Skapar en skugga under kortet*/
+        margin: 8px; /*Bestämmer storlek*/
       }
 
       .plspressbtn {
-          text-align: center;
+          text-align: center; /*Lägger texten i mitten*/
       }
       
       .about-section {
-        padding: 50px;
-        text-align: center;
-        background-color: #474e5d;
-        color: white;
+        padding: 50px; /*Skapar en padding på 50px*/
+        text-align: center; /*Lägger texten i mitten*/
+        background-color: #474e5d; /*Sätter bakgrundsfärgen till #474e5d */
+        color: white; /*Sätter färgen till vit*/
       }
       
       .container {
-        padding: 0 16px;
+        padding: 0 16px; /*Skapar en padding på 16px*/
       }
       
   
       
       .title {
-        color: grey;
+        color: grey; /*Sätter färgen till grå*/
       }
       
       .button {
-        border: none;
-        outline: 0;
-        display: inline-block;
-        padding: 8px;
-        color: white;
-        background-color: #000;
-        text-align: center;
-        cursor: pointer;
-        width: 100%;
+        border: none; /*Bestämmer vilken typ av border som är runt knappen*/
+        outline: 0; /*Bestämmer en outline, en typ av låda utanför bordern*/
+        display: inline-block; /*Låter oss sätta en bredd och en höjd på blocket*/
+        padding: 8px; /*Skapar en padding på 8px*/
+        color: white; /*Sätter vit som färg*/
+        background-color: #000; /*Sätter #000, hexkod för svart som bakgrundsfärg*/
+        text-align: center; /*Sätter text i mitten*/
+        cursor: pointer; /*Bestämmer vilken typ av muspekaren användare ser när användaren hovrar över*/
+        width: 100%; /*Bredden är lika bred som skärmen.*/
       }
       
       .button:hover {
-        background-color: #555;
+        background-color: #555; /*Sätter #555 som bakgrundsfärg vid hover*/
       }
       
 .toptext {
-    text-align: center;
+    text-align: center; /*Lägger texten i mitten*/
 }
   
-    
+        /*När skärmen är mindre än 800px, så aktiveras nedan*/
     @media screen and (max-width: 800px) {
       .topnav {
-          justify-content: left;
-          max-width: 300px;
+        justify-content: left; /*Lägger allt innehåll till vänster på skärmen*/
+        max-width: 300px; /*Max bredd är 300px*/
+      
       }
     
     .topnav a {
-      padding: 14px 16px;
-        font-size: 5px;
-        float: none;
+      padding: 14px 16px; /*Generar utrymme i form av en rektangel */
+        font-size: 5px; /*Bestämmer storlek på typsnittet*/
+        float: none; /*Innehållet kommer inte att flyttas*/
     }
     .image {
-      display: none;        
+      display: none; /*Innehållet kommer inte att visas*/         
           }
           .maindiv {
-              justify-content: left;
-              left: 0px;
-      width: 375px;
-      display: none;
+            justify-content: left; /*Lägger allt innehåll på vänster sida*/
+            left: 0px; /*Bestämmer hur många pixlar ifrån den vänstra sidan som innehållet kommer visas*/
+      width: 300px; /*Bestämmer bredd*/
+      display: none; /*Innehållet kommer inte visas*/
             }
-            .maindiv2 {
+            .maindiv2 { /* Sätter parametrar för maindiv2, det vita blocket som agerar bakgrund */
       
-      
-              justify-content: left;
-              height: 1200px;
-              width: 375px;
+
+              justify-content: left; /*Lägger allt i div åt vänster*/
+              height: 3000px; /*Justerar höjd*/
+              width: 300px; /*Justerar bredd*/
               background-color: white;
             }
-            body {background-image:url("");
-              margin: 0;
-              overflow-x: hidden;
+            body {background-image:url(""); /*Tar bort bakgrundsbilden*/
+              margin: 0; /*Bestämmer storlek*/
+              overflow-x: hidden; /*Gömmer overflödande innehåll*/
               }
               .välkommenTillJeez {
                 
-                text-align: center;
+                text-align: center; /*Lägger texten i mitten*/
               }
 
               .toptext {
-                  text-align: left;
+                  text-align: left; /*Lägger texten åt vänster*/
               }
 
               .column {
-                width: 100%;
-                display: block;
+                width: 100%; /*Följer storlek efter bredden på skärmen*/
+                display: block; /*Visas som ett block*/
               }
 
               .karta {
-    display: none;
+    display: none; /*Föremålet visas inte*/
             }
 
             .wrapper {
-                text-align: left;
+                text-align: left; /*Texten flyttas till vänster sida*/
             }
 
             .plspressbtn {
-                text-align: left;
-                font-size: 12px;
-                display: none;
+                text-align: left; /*Texten flyttas till vänster sida*/
+                font-size: 12px; /*Storleken på typsnittet ändras till 12px*/
+                display: none; /*Föremålet visas inte*/
             }
 
             .hogersida {
-                text-align: left;
+                text-align: left; /*Ja, fine, klassen heter "Högersida", men nu flyttas texten till vänster sida istället. */
             }
 
             }

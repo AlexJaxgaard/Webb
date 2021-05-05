@@ -184,12 +184,14 @@ width: 300px; /*Bestämmer bredd*/
 display: none; /*Innehållet kommer inte visas*/
       }
       .maindiv2 {
+/* Sätter parametrar för maindiv2, det vita blocket som agerar bakgrund */
+margin: auto; /*Bestämmer storlek*/
+display: flex; /*Gör att diven följer storleken på skärmen*/
+justify-content: center; /*Lägger allt i div i mitten*/
+height: 3000px; /*Justerar höjd*/
+width: 300px; /*Justerar bredd*/
 
-
-        justify-content: left;
-        height: 3000px;
-        width: 300px;
-        background-color: white;
+background-color: white;
       }
       body {background-image:url(""); /*Tar bort bakgrundsbilden*/
         margin: 0; /*Bestämmer storlek*/
