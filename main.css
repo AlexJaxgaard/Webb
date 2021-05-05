@@ -2,18 +2,15 @@ body {background-image:url("https://wallpaperaccess.com/full/765801.jpg");
 margin: 0;
 }
 
+/* Font face för vissa element på index-sidan */
 @font-face {
   font-family: signerica;
   src: url(./Signerica_Fat.ttf);
 }
 
-.col-sm-3 {
-  width: 25%;
-  float: left;
-  position: relative;
-}
 
-/* Add a black background color to the top navigation */
+
+/* Lägger till en svart bakgrundsfärg till menyn */
 .topnav {
   
   overflow: hidden;
@@ -24,7 +21,7 @@ margin: 0;
   
 }
 
-/* Style the links inside the navigation bar */
+/* Stylar länkarna inuti menyn */
 .topnav a {
   color: black;
   text-align: center;
@@ -35,153 +32,158 @@ margin: 0;
   
 }
 
-/* Change the color of links on hover */
+/* Ändrar färgen på länkar vid hover*/
 .topnav a:hover {
   background-color: black;
   color: white;
 }
 
-/* Add a color to the active/current link */
+/* Lägger till en färg till den aktiva länken i menyn */
 .topnav a.active {
   background-color: black;
   color: white;
 }
+/* Sätter parametrar för maindiv, det vita blocket som agerar bakgrund */
 .maindiv {
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  height: 216px;
-  width: 1000px;
-  /* border: 3px white; */
-  background-color: white;
+  margin: auto; /*Bestämmer storlek*/
+  display: flex; /*Gör att diven följer storleken på skärmen*/
+  justify-content: center; /*Lägger allt i div i mitten*/
+  height: 216px; /*Justerar höjd*/
+  width: 1000px;/*Justerar bredd*/
+  
+  background-color: white; /*Bestämmer bakgrundsfärgen*/
 }
 .maindiv2 {
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  height: 3000px;
-  width: 1000px;
-  /* border: 3px white; */
-  background-color: white;
+  /* Sätter parametrar för maindiv2, det vita blocket som agerar bakgrund */
+  margin: auto; /*Bestämmer storlek*/
+  display: flex; /*Gör att diven följer storleken på skärmen*/
+  justify-content: center; /*Lägger allt i div i mitten*/
+  height: 3000px; /*Justerar höjd*/
+  width: 1000px; /*Justerar bredd*/
+
+  background-color: white; /*Bestämmer bakgrundsfärgen*/
 }
 
 .flex-container {
-  display: flex;
-  flex-direction: column;
+  display: flex; /*Gör att kortet följer storleken på skärmen*/
+      flex-direction: column; /*I vilken ordning kortet sitter med andra kort*/
 }
 
 .card {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  top: 350px;
-  left: 250px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
+ /* Sätter parametrar för card 1 */
+ position: absolute; /*Bestämmer hur kortet sitter på skärmen, i detta fall stannar den på den plats som den är ombedd att stanna oavsett scroll*/
+ display: flex; /*Gör att kortet följer storleken på skärmen*/
+ flex-direction: column; /*I vilken ordning kortet sitter med andra kort*/
+ top: 350px; /*Position från toppen av sidan, i detta fall 350px*/
+ left: 250px; /*Position från vänster sida, i detta fall 250px*/
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /*Skugga bakom kortet*/
+ max-width: 300px; /*Max bredd är 300px*/
+ margin: auto; /*Bestämmer storlek*/
+ text-align: center; /*Sätter text i mitten på kortet*/
+ font-family: arial; /*Definerar vilken font texten har*/
 }
 
 .price {
-  color: grey;
-  font-size: 22px;
+  color: grey; /*Bestämmer färg på texten*/
+      font-size: 22px; /*Bestämmer storlek på typsnittet*/
 }
 
 .button {
-  border: none;
-  outline: 0;
-  padding: 12px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
+  border: none; /*Bestämmer vilken typ av border som är runt knappen*/
+      outline: 0; /*Bestämmer en outline, en låda utanför bordern*/
+      padding: 12px; /*Generar utrymme i form av en rektangel */
+      color: white; /*Bestämmer färgen på knappen*/
+      background-color: #000; /*Bestämmer bakgrundsfärgen på knappen*/
+      text-align: center; /*Sätter text i knappen mitt i*/
+      cursor: pointer; /*Bestämmer hur muspekaren ser ut medans den hovrar över knappen*/
+      width: 100%; /*Bredden följer skärmens storlek*/
+      font-size: 18px; /*Bestämmer storleken på typsnittet*/
 }
 
 .button:hover {
-  opacity: 0.7;
+  opacity: 0.7; /*Bestämmer transparens för knappen under kort*/
 }
 
  .card2 {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  top: 350px;
-  left: 570px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
+  position: absolute; /*Bestämmer hur kortet sitter på skärmen, i detta fall stannar den på den plats som den är ombedd att stanna oavsett scroll*/
+      display: flex; /*Gör att kortet följer storleken på skärmen*/
+      flex-direction: column; /*I vilken ordning kortet sitter med andra kort*/
+      top: 350px; /*Position från toppen av sidan, i detta fall 350px*/
+      left: 570px;/*Position från vänster sida, i detta fall 350px*/
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /*Skugga bakom kortet*/
+      max-width: 300px; /*Max bredd är 300px*/
+      margin: auto; /*Bestämmer storlek*/
+      text-align: center; /*Sätter text i mitten på kortet*/
+      font-family: arial; /*Definerar vilken font texten har*/
 }
 .card2 button:hover {
-  opacity: 0.7;
+  opacity: 0.7; /*Bestämmer transparens för knappen under kort*/
 }
  
 .card3 {
-  position: absolute;
-  display: flex; 
-  flex-direction: column;
-  top: 350px;
-  left: 890px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
+  position: absolute; /*Bestämmer hur kortet sitter på skärmen, i detta fall stannar den på den plats som den är ombedd att stanna oavsett scroll*/
+      display: flex; /*Gör att kortet följer storleken på skärmen*/
+      flex-direction: column; /*I vilken ordning kortet sitter med andra kort*/
+      top: 350px; /*Position från toppen av sidan, i detta fall 350px*/
+      left: 890px; /*Position från vänster sida, i detta fall 890px*/
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /*Skugga bakom kortet*/
+      max-width: 300px; /*Max bredd är 300px*/
+      margin: auto; /*Bestämmer storlek*/
+      text-align: center; /*Sätter text i mitten på kortet*/
+      font-family: arial; /*Definerar vilket typsnitt texten har*/
 }
 .card3 button:hover {
-  opacity: 0.7;
+  opacity: 0.7; /*Bestämmer transparens för knappen under kort*/
 }
 
 .maindiv3 {
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  height: 3000px;
-  width: 1000px;
-  /* border: 3px white; */
-  background-color: white;
+  margin: auto; /*Bestämmer storlek*/
+      display: flex; /*Gör att diven följer storleken på skärmen*/
+      justify-content: center; /*Lägger allt i div i mitten*/
+      height: 3000px; /*Bestämmer höjden, i detta fall 3000px*/
+      width: 1000px; /*Bestämmer bredden, i detta fall 1000px*/
+      /* border: 3px white; */
+      background-color: white; /*Bestämmer bakgrundsfärgen*/
 }
 
-
+/*När skärmen är mindre än 800px, så aktiveras nedan*/
 @media screen and (max-width: 800px) {
   .topnav {
-      justify-content: left;
-      max-width: 300px;
+      justify-content: left; /*Lägger allt innehåll till vänster på skärmen*/
+      max-width: 300px; /*Max bredd är 300px*/
   }
 
 .topnav a {
-  padding: 14px 16px;
-    font-size: 5px;
-    float: none;
+  padding: 14px 16px; /*Generar utrymme i form av en rektangel */
+        font-size: 5px; /*Bestämmer storlek på typsnittet*/
+        float: none; /*Innehållet kommer inte att flyttas*/
 }
 .image {
-  display: none;        
+  display: none;      /*Innehållet kommer inte att visas*/    
       }
       .maindiv {
-          justify-content: left;
-          left: 0px;
-  width: 375px;
-  display: none;
+        justify-content: left; /*Lägger allt innehåll på vänster sida*/
+              left: 0px; /*Bestämmer hur många pixlar ifrån den vänstra sidan som innehållet kommer visas*/
+      width: 375px; /*Bestämmer bredd*/
+      display: none; /*Innehållet kommer inte visas*/
         }
         .maindiv2 {
   
   
-          justify-content: left;
-          height: 3000px;
-          width: 375px;
-          background-color: white;
+        
+      
+          justify-content: left; /*Lägger allt innehåll på vänster sida*/
+          height: 3000px; /*Bestämmer höjd, i detta fall 3000px*/
+          width: 375px; /*Bestämmer bredd, i detta fall 375px*/
+          background-color: white; /*Sätter vit som bakgrundsfärgen*/
         }
-        body {background-image:url("");
-          margin: 0;
-          overflow-x: hidden;
+        body {background-image:url(""); /*Tar bort bakgrundsbilden*/
+          margin: 0; /*Bestämmer storlek*/
+          overflow-x: hidden; /*Gömmer overflödande innehåll*/
           }
           .välkommenTillJeez {
             
-            text-align: center;
+            text-align: center; /*Lägger text i mitten av skärmen*/
           }
 
           

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="basket.css">
+    <link rel="stylesheet" href="basket.css"> <!-- "ansluter" basket.html med basket.css-->
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,21 +9,21 @@
     <title>Jeez Clothing - Varukorg</title>
 </head>
 <body>
-    <div class="maindiv">
-        <img src="./Jeez-logo.png" alt="Jeez Logga"  class="image" style="width:384px" >    
+    <div class="maindiv"> <!-- Div för maindiv, för att dela upp det vita "blocket" i mitten. -->
+        <img src="./Jeez-logo.png" alt="Jeez Logga"  class="image" style="width:384px" >    <!-- Logga på toppen av sidan -->
     </div>
-        <div class="topnav">
+        <div class="topnav"> <!-- Div för meny klass "topnav" i basket.css-->
             <a href="./index.html">Home</a>
             <a href="./products.html">Produkter</a>
             <a href="./about.html">Om oss</a>
             <a href="./tracker.html">Spåra ditt paket</a>
             <a href="./sign-in.html">Logga in</a>
-            <a class="active" href="./basket.html">Varukorg: 2 produkter, 1960kr</a>
+            <a class="active" href="./basket.html">Varukorg: 2 produkter, 1960kr</a> <!-- Class active innebär att "Varukorg: 2 produkter, 1960kr" kommer att markeras som aktiv i menyn -->
             
         </div>
-          <div class="maindiv2">
+          <div class="maindiv2"> <!-- Div för maindiv2, för att dela upp det vita "blocket" i mitten. -->
 
-            <div class="card">
+            <div class="card"> <!-- Div för de cards i varukorgen -->
                 <img class="imgcard1" src="https://brixx.nu/wp-content/uploads/White_ca32741f-4550-4a2c-bdac-83e3a8814dc8_1200x1544-300x375.jpg" alt="Hoodie" style="width:100%">
                 <h1>Hoodie</h1>
                 <p class="price">SEK 950.00</p>
@@ -39,7 +39,7 @@
           
     </div>
 
-    <div class="card3">
+    <div class="card3"> <!-- Omgjort kort, skriver ut en samanställning av det som finns i korgen-->
         
         <h1>Din beställning</h1>
         <p class="price"></p>
@@ -52,9 +52,9 @@
         <p>1x Hoodie á 950.00kr...950.00kr</p>
         <p>Moms: 25%..............490.00kr</p>
         <p>SEK 1960.00kr</p>
-        <button class="button">Betala med kort</button>
-        <button class="PayPalBtn">Betala med PayPal</button>
-        <button class="PayBtnApl">Betala med ApplePay</button>
+        <button class="button">Betala med kort</button> <!--Knapp för kortbetalning-->
+        <button class="PayPalBtn">Betala med PayPal</button> <!--Knapp för betalning med paypal-->
+        <button class="PayBtnApl">Betala med ApplePay</button> <!--Knapp för betalning med Apple Pay-->
     </div>
 </div>
 </body>

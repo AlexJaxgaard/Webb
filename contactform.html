@@ -7,26 +7,29 @@
     <title>Jeez Clothing - Konaktformulär</title>
 </head>
 <body>
-    <form action="./thanks.html" >
-        <label for="fname">Förnamn:</label><br>
-        <input type="text" id="fname" name="fname" required><br>
+    <form action="./thanks.html" > <!--Efter formuläret så kommer användaren att skickas vidare till ett tack-fönster -->
+        <label for="fname">Förnamn:</label><br> <!-- Användaren skriver in förnamn -->
+        <input type="text" id="fname" name="fname" required><br> <!-- required, innebär att användaren måste fylla i detta för att fortsätta -->
         <label for="lname">Efternamn:</label><br>
-        <input type="text" id="lname" name="lname" required><br><br>
+        <input type="text" id="lname" name="lname" required><br><br> <!-- required, innebär att användaren måste fylla i detta för att fortsätta -->
 
-        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-        <label for="vehicle1">Jag har en fråga</label><br>
-        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-        <label for="vehicle2">Jag vill reklamera en vara</label><br>
+        <!-- Checkbox där användare får välja mellan fråga eller reklamation-->
+        <input type="checkbox" id="question" name="question" value="Ques">
+        <label for="question">Jag har en fråga</label><br> 
+        <input type="checkbox" id="turnin" name="turnin" value="Turn">
+        <label for="turnin">Jag vill reklamera en vara</label><br>
 
         <label for="email">E-postadress:</label><br>
-        <input type="email" id="email" name="email" autocomplete="on" required><br>
+        <input type="email" id="email" name="email" autocomplete="on" required><br> <!-- required, innebär att användaren måste fylla i detta för att fortsätta -->
+       <!-- När input är email-typ så ändras layout för användare på mobil, så att det är lättare att fylla i med @ och .com, då de visas på tangentbordet -->
         <label for="pnbr">Telfonnummer:</label><br>
-        <input type="tel" id="pnbr" name="pnbr" placeholder="070-6789-101" pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}" required><br>
+        <input type="tel" id="pnbr" name="pnbr" placeholder="070-6789-101" pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}" required><br> <!-- required, innebär att användaren måste fylla i detta för att fortsätta -->
+        <!-- Pattern innebär att användaren måste fylla i som "123-1234-123" för att kunna gå vidare-->
 
         <label >Beskriv vad du behöver hjälp med:</label><br>
-        <textarea name="message" rows="10" cols="30"></textarea><br>
+        <textarea name="message" rows="10" cols="30"></textarea><br> <!-- Textruta istället, så att användaren kan skriva längre kommentarer-->
  
-        <input type="submit" value="Skicka och stäng fönster" >
+        <input type="submit" value="Skicka " > 
         <!-- onclick="self.close()" -->
       </form>
       

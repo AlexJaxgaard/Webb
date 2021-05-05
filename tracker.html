@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="main.css"> <!-- "ansluter" tracker.html med main.css så att sidan följer formatet-->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeez Clothing - Spåra ditt Paket</title>
+</head>
+<body>
+    <div class="maindiv"> <!-- Div för maindiv, för att dela upp det vita "blocket" i mitten. -->
+        <img src="./Jeez-logo.png" alt="Jeez Logga"  class="image" style="width:384px" > <!-- Logga på toppen av sidan -->
+    </div>
+        <div class="topnav"> <!-- Div för meny klass "topnav i main.css"-->
+            <a href="./index.html">Home</a> 
+            <a href="./products.html">Produkter</a>
+            <a href="./about.html">Om oss</a>
+            <a class="active" href="./tracker.html">Spåra ditt paket</a> <!-- Class active innebär att "Spåra ditt paket" kommer att markeras som aktiv i menyn -->
+            <a href="./sign-in.html">Logga in</a>
+            <a href="./basket.html">Varukorg: 2 produkter, 1960kr</a>
+            
+          </div>
+          
+          <div class="maindiv2"> <!-- Div för maindiv2, för att dela upp det vita "blocket" i mitten. -->
+            <form action="#" autocomplete="on"> <!--Efter formuläret så kommer användaren att skickas vidare till rätt ordersida -->
+                <label for="ordern">Ordernummer:</label><br> <!-- Visar texten "Ordernummer: " ovanför textrutan-->
+                <input type="text" id="ordern" name="ordern" size="50" required><br> <!-- Textruta som låter användare fylla i sitt ordernummer -->
+                <input type="submit" value="Submit">
+
+              </form>
+    </div>
+</body>
+</html>

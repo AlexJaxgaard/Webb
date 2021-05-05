@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="login.css"> <!-- "ansluter" login.html med login.css-->
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,24 +9,25 @@
     <title>Jeez Clothing - Logga in</title>
 </head>
 <body>
-    <div class="maindiv">
-        <img src="./Jeez-logo.png" alt="Jeez Logga"  class="image" style="width:384px" >
+    <div class="maindiv"> <!-- Div för maindiv, för att dela upp det vita "blocket" i mitten. -->
+        <img src="./Jeez-logo.png" alt="Jeez Logga"  class="image" style="width:384px" > <!-- Logga på toppen av sidan -->
     </div>
-        <div class="topnav">
+        <div class="topnav"> <!-- Div för meny klass "topnav i index.css"-->
             <a href="./index.html">Home</a>
             <a href="./products.html">Produkter</a>
             <a href="./about.html">Om oss</a>
             <a href="./tracker.html">Spåra ditt paket</a>
-            <a class="active" href="./sign-in.html">Logga in</a>
+            <a class="active" href="./sign-in.html">Logga in</a> <!-- Class active innebär att "Logga In" kommer att markeras som aktiv i menyn -->
             <a href="./basket.html">Varukorg: 2 produkter, 1960kr</a>
             
           </div>
-          <div class="maindiv2">
-            <form>
+          <div class="maindiv2"> <!-- Div för maindiv2, för att dela upp det vita "blocket" i mitten. -->
+            <form> <!-- Initierar formulär på sidan -->
                 <label for="email">Email-adress</label><br>
-                <input type="email" id="email" name="email"><br>
+                <input type="email" id="email" name="email" required><br> <!-- När input är email-typ så ändras layout för användare på mobil, så att det är lättare att fylla i med @ och .com, då de visas på tangentbordet -->
+                <!-- required, innebär att användaren måste fylla i detta för att fortsätta -->
                 <label for="passw">Lösenord</label><br>
-                <input type="password" id="passw" name="passw">
+                <input type="password" id="passw" name="passw" required> <!-- required, innebär att användaren måste fylla i detta för att fortsätta -->
                 <button  type="button">Logga in</button>
               </form>
               

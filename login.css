@@ -1,19 +1,15 @@
 body {background-image:url("https://wallpaperaccess.com/full/765801.jpg");
 margin: 0;
 }
-
+    /* Font face för vissa element på index-sidan */
 @font-face {
   font-family: signerica;
   src: url(./Signerica_Fat.ttf);
 }
 
-.col-sm-3 {
-  width: 25%;
-  float: left;
-  position: relative;
-}
 
-/* Add a black background color to the top navigation */
+
+/* Lägger till en svart bakgrundsfärg till menyn */
 .topnav {
   
   overflow: hidden;
@@ -25,11 +21,11 @@ margin: 0;
 }
 
 .loginbtn {
-  top: 350px;
-  height: 50px;
+  top: 350px; /*Position från toppen av sidan, i detta fall 350px*/
+  height: 50px; /*Justerar höjd*/
 }
 
-/* Style the links inside the navigation bar */
+/* Stylar länkarna inuti menyn */
 .topnav a {
   color: black;
   text-align: center;
@@ -40,76 +36,76 @@ margin: 0;
   
 }
 
-/* Change the color of links on hover */
+/* Ändrar färgen på länkar vid hover*/
 .topnav a:hover {
   background-color: black;
   color: white;
 }
 
-/* Add a color to the active/current link */
+/* Lägger till en färg till den aktiva länken i menyn */
 .topnav a.active {
   background-color: black;
   color: white;
 }
+
+/* Sätter parametrar för maindiv, det vita blocket som agerar bakgrund */
 .maindiv {
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  height: 216px;
-  width: 1000px;
-  /* border: 3px white; */
+  margin: auto; /*Bestämmer storlek*/
+  display: flex; /*Gör att diven följer storleken på skärmen*/
+  justify-content: center; /*Lägger allt i div i mitten*/
+  height: 216px; /*Justerar höjd*/
+  width: 1000px;/*Justerar bredd*/
   background-color: white;
 }
-.maindiv2 {
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  height: 500px;
-  width: 1000px;
-  /* border: 3px white; */
+.maindiv2 { /* Sätter parametrar för maindiv2, det vita blocket som agerar bakgrund */
+  margin: auto; /*Bestämmer storlek*/
+  display: flex; /*Gör att diven följer storleken på skärmen*/
+  justify-content: center; /*Lägger allt i div i mitten*/
+  height: 500px; /*Justerar höjd*/
+  width: 1000px; /*Justerar bredd*/
   background-color: white;
 }
 
 .flex-container {
-  display: flex;
-  flex-direction: column;
+  display: flex; /*Gör att kortet följer storleken på skärmen*/
+      flex-direction: column; /*I vilken ordning kortet sitter med andra kort*/
 }
-
+    /*När skärmen är mindre än 800px, så aktiveras nedan*/
 @media screen and (max-width: 800px) {
   .topnav {
-      justify-content: left;
-      max-width: 300px;
+    justify-content: left; /*Lägger allt innehåll till vänster på skärmen*/
+    max-width: 300px; /*Max bredd är 300px*/
   }
 
 .topnav a {
-  padding: 14px 16px;
-    font-size: 5px;
-    float: none;
+  padding: 14px 16px; /*Generar utrymme i form av en rektangel */
+        font-size: 5px; /*Bestämmer storlek på typsnittet*/
+        float: none; /*Innehållet kommer inte att flyttas*/
 }
 .image {
-  display: none;        
+  display: none; /*Innehållet kommer inte att visas*/        
       }
       .maindiv {
-          justify-content: left;
-          left: 0px;
-  width: 375px;
-  display: none;
+        justify-content: left; /*Lägger allt innehåll på vänster sida*/
+        left: 0px; /*Bestämmer hur många pixlar ifrån den vänstra sidan som innehållet kommer visas*/
+width: 375px; /*Bestämmer bredd*/
+display: none; /*Innehållet kommer inte visas*/
         }
         .maindiv2 {
   
-  
-          justify-content: left;
-          height: 500px;
-          width: 375px;
-          background-color: white;
+      
+          justify-content: left; /*Lägger allt innehåll på vänster sida*/
+          height: 3000px; /*Bestämmer höjd, i detta fall 3000px*/
+          width: 375px; /*Bestämmer bredd, i detta fall 375px*/
+          background-color: white; /*Sätter vit som bakgrundsfärgen*/
         }
-        body {background-image:url("");
-          margin: 0;
-          overflow-x: hidden;
+        body {background-image:url(""); /*Tar bort bakgrundsbilden*/
+          margin: 0; /*Bestämmer storlek*/
+          overflow-x: hidden; /*Gömmer overflödande innehåll*/
           }
           .välkommenTillJeez {
             
-            text-align: center;
+            text-align: center; /*Lägger text i mitten av skärmen*/
           }
 
           
