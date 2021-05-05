@@ -5,7 +5,7 @@ body {background-image:url("https://wallpaperaccess.com/full/765801.jpg");
     @font-face {
       font-family: signerica;
       src: url(./Signerica_Fat.ttf);
-      font-weight: fat;
+      
     }
     
     .col-sm-3 {
@@ -24,10 +24,10 @@ body {background-image:url("https://wallpaperaccess.com/full/765801.jpg");
       
       
     }
+
+
     
-.name {
-    font: signeriga;
-}
+
 
 .hogersida {
     text-align: right;
@@ -35,7 +35,7 @@ body {background-image:url("https://wallpaperaccess.com/full/765801.jpg");
 
     /* Style the links inside the navigation bar */
     .topnav a {
-      float: center;
+      
       color: black;
       text-align: center;
       padding: 14px 16px;

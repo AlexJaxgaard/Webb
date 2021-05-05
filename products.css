@@ -3,6 +3,11 @@ body {background-image:url("https://wallpaperaccess.com/full/765801.jpg");
     
     }
     
+    @font-face {
+      font-family: signerica;
+      src: url(./Signerica_Fat.ttf);
+
+    }
 
     
     /* Add a black background color to the top navigation */
@@ -18,7 +23,6 @@ body {background-image:url("https://wallpaperaccess.com/full/765801.jpg");
     
     /* Style the links inside the navigation bar */
     .topnav a {
-      float: center;
       color: black;
       text-align: center;
       padding: 14px 16px;

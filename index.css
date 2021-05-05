@@ -1,11 +1,11 @@
 body {background-image:url("https://wallpaperaccess.com/full/765801.jpg");
     margin: 0;
     }
-    
+    /* Font face för vissa element på index-sidan */
     @font-face {
       font-family: signerica;
       src: url(./Signerica_Fat.ttf);
-      font-weight: fat;
+
     }
     
     .col-sm-3 {
@@ -14,7 +14,7 @@ body {background-image:url("https://wallpaperaccess.com/full/765801.jpg");
       position: relative;
     }
     
-    /* Add a black background color to the top navigation */
+    /* Lägger till en svart bakgrundsfärg till menyn */
     .topnav {
       
       overflow: hidden;
@@ -25,9 +25,9 @@ body {background-image:url("https://wallpaperaccess.com/full/765801.jpg");
       
     }
     
-    /* Style the links inside the navigation bar */
+    /* Stylar länkarna inuti menyn */
     .topnav a {
-      float: center;
+  
       color: black;
       text-align: center;
       padding: 14px 16px;
@@ -37,24 +37,25 @@ body {background-image:url("https://wallpaperaccess.com/full/765801.jpg");
       
     }
     
-    /* Change the color of links on hover */
+    /* Ändrar färgen på länkar vid hover*/
     .topnav a:hover {
       background-color: black;
       color: white;
     }
     
-    /* Add a color to the active/current link */
+    /* Lägger till en färg till den aktiva länken i menyn */
     .topnav a.active {
       background-color: black;
       color: white;
     }
+    /* Sätter parametrar för maindiv, det vita blocket som agerar bakgrund */
     .maindiv {
       margin: auto;
       display: flex;
-      justify-content: center;
-      height: 216px;
-      width: 1000px;
-      /* border: 3px white; */
+      justify-content: center; /*Lägger allt i div i mitten*/
+      height: 216px; /*Justerar höjd*/
+      width: 1000px;/*Justerar bredd*/
+      
       background-color: white;
     }
     .maindiv2 {

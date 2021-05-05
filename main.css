@@ -5,7 +5,6 @@ margin: 0;
 @font-face {
   font-family: signerica;
   src: url(./Signerica_Fat.ttf);
-  font-weight: fat;
 }
 
 .col-sm-3 {
@@ -27,7 +26,6 @@ margin: 0;
 
 /* Style the links inside the navigation bar */
 .topnav a {
-  float: center;
   color: black;
   text-align: center;
   padding: 14px 16px;
